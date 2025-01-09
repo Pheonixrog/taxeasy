@@ -31,7 +31,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu Button (Hamburger) */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden px-3 flex items-center">
           <Button variant="default" onClick={toggleMenu} className="p-2">
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -46,7 +46,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/90 absolute top-16 left-0 w-full p-5 px-5 space-y-4">
+        <div className="md:hidden px-4 bg-white/90 absolute top-16 left-0 w-full p-5 px-5 space-y-4">
           <Link href="/" className="block text-sm font-medium hover:text-primary">HOME</Link>
           <Link href="/company" className="block text-sm font-medium hover:text-primary">COMPANY/LLP</Link>
           <Link href="/itr" className="block text-sm font-medium hover:text-primary">ITR FILING</Link>
