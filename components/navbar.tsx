@@ -14,11 +14,11 @@ export function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b">
+    <nav className="px-8 fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="TaxEasy" className="h-8" />
+          <img src="/logo.png" alt="TaxEasy" className="h-11" />
         </Link>
 
         {/* Desktop Navbar Links */}
