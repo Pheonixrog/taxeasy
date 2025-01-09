@@ -4,11 +4,11 @@ export function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800">
       <div className="absolute inset-0 bg-black/60 z-10" />
-      {/* <img
-        src="/team-bg.jpg"
+      <img
+        src="https://cdn.dribbble.com/users/2851002/screenshots/9667092/media/09648e273e248e7cfd22ade4010b2a6e.gif"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover"
-      /> */}
+      />
       <div className="container relative z-20 text-center text-white pt-16">
         <h2 className="text-xl md:text-2xl font-semibold text-teal-400 mb-4">
           TOP RATED IN DELHI NCR!

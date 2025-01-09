@@ -46,7 +46,7 @@ export default function CompanyPage() {
               </p>
             </div>
             <div className="mt-8 flex items-center space-x-4">
-              <img src="/google.svg" alt="Google" className="h-8 w-8" />
+              <img src="https://imgs.search.brave.com/WFUCWSTA1WQZxQ6Bj0PpSiIS0qx9cb9e-ysxkOY4rTA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvZ29vZ2xlLXMt/bG9nby8xNTAvR29v/Z2xlX0ljb25zLTA5/LTUxMi5wbmc" alt="Google" className="h-8 w-8" />
               <div>
                 <div className="text-yellow-400 flex">{"★".repeat(5)}</div>
                 <p>4.9 Rating on Google Reviews</p>

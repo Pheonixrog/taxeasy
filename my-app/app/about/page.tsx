@@ -37,7 +37,7 @@ export default function AboutPage() {
           </div>
           <div className="relative">
             <img
-              src="/team-photo.jpg"
+              src="https://imgs.search.brave.com/MvRK9_FNUF5oZ8jOGN0bbpEmvMTil-Own08d2uTaoSs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jYXJ0b29uLWlt/YWdlLXRocmVlLXBl/b3BsZS13ZWFyaW5n/LWdsYXNzZXMtc3Vp/dC13aXRoLXdvcmQt/Ym9iLWl0XzEwMjM5/ODQtMzI0MDEuanBn/P3NlbXQ9YWlzX2h5/YnJpZA"
               alt="TaxEasy Team"
               className="rounded-lg shadow-lg w-full"
             />
