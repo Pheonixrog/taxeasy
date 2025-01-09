@@ -30,7 +30,7 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               At Taxeasy, we are not just a service provider; we are your partners in success. Join hands
-              with us, and let's navigate the journey of entrepreneurship together. Welcome to Taxeasy –
+              with us, and let&apos;s navigate the journey of entrepreneurship together. Welcome to Taxeasy –
               Where Business Success Begins!
             </p>
             <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
