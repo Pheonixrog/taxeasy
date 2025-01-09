@@ -1,5 +1,9 @@
 import { ContactForm } from "@/components/contact-form"
+import { Footer } from "@/components/footer"
+import { Partners } from "@/components/partners"
+import { ProcessSteps } from "@/components/process-steps"
 import { CheckCircle } from 'lucide-react'
+import GSTServices from "@/components/gst"
 
 export default function GSTPage() {
   const services = [
@@ -13,6 +17,7 @@ export default function GSTPage() {
   ]
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-b from-teal-900 to-teal-800">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
@@ -56,6 +61,11 @@ export default function GSTPage() {
         </div>
       </div>
     </div>
+    <Partners />
+    <GSTServices/>
+    <ProcessSteps/>
+    <Footer/>
+    </>
   )
 }
 

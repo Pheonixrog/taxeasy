@@ -1,7 +1,9 @@
+import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-b from-teal-900 to-teal-800">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center text-white py-8">
@@ -46,6 +48,8 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

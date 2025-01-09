@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
+import { Partners } from "@/components/partners"
+import { CitiesCoverage } from "@/components/cities-coverage"
+import { Footer } from "@/components/footer"
+import { ProcessSteps } from "@/components/process-steps"
+import  ComparisonTable  from "@/components/comparison"
+import CompanyRegistration from "@/components/comp"
 
 export default function CompanyPage() {
   const services = [
@@ -13,6 +19,7 @@ export default function CompanyPage() {
   ]
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-b from-teal-900 to-teal-800 pt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
@@ -68,6 +75,14 @@ export default function CompanyPage() {
         </div>
       </div>
     </div>
+    
+    <Partners />
+    <ProcessSteps/>
+    <CompanyRegistration/>
+    <ComparisonTable/>
+     <CitiesCoverage />
+          <Footer />
+    </>
   )
 }
 

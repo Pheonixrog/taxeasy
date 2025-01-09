@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
+import { Partners } from "@/components/partners"
+import { ITRFormsGrid } from "@/components/itr-forms-grid"
+import { TaxRegimeHelp } from "@/components/tax-regime-help"
+import { TaxRegimeComparison } from "@/components/tax-regime-comparison"
+import { Footer } from "@/components/footer"
+import { ProcessSteps } from "@/components/process-steps"
 
 export default function ITRPage() {
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-b from-teal-900 to-teal-800 pt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center text-white mb-12">
@@ -45,6 +52,13 @@ export default function ITRPage() {
         </div>
       </div>
     </div>
+    <Partners />
+    <ProcessSteps/>
+          <ITRFormsGrid />
+          <TaxRegimeComparison />
+          <TaxRegimeHelp />
+          <Footer/>
+    </>
   )
 }
 

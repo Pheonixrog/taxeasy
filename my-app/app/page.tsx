@@ -9,15 +9,18 @@ import { ScenariosFAQ } from "@/components/scenarios-faq"
 import { CustomerReviewsSlider } from "@/components/customer-reviews-slider"
 import { CitiesCoverage } from "@/components/cities-coverage"
 import { Footer } from "@/components/footer"
+import { WhyTaxEasy } from "@/components/why-taxeasy"
 
 export default function Home() {
   return (
     <div className="min-h-screen ">
       <Hero />
       <Partners />
+      <ProcessSteps/>
       <ITRFormsGrid />
       <TaxRegimeComparison />
       <TaxRegimeHelp />
+      <WhyTaxEasy/>
       <DueDates />
       <ScenariosFAQ />
       <CustomerReviewsSlider />
