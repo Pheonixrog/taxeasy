@@ -38,24 +38,24 @@ const dueDates = [
 
 export function DueDates() {
   return (
-    <section className="py-16 px-8 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      <div className="container">
+    <section className="py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2">ITR Filing Due Dates (AY 2024-25)</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {dueDates.map((date, index) => (
-            <Card key={index} className="bg-white/10 border-none backdrop-blur">
+            <Card key={index} className="text-white bg-white/20 border-none backdrop-blur-lg p-6">
               <CardHeader>
                 <CardTitle className={`text-xl font-bold bg-gradient-to-r ${date.color} bg-clip-text text-transparent`}>
                   {date.date}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-300 mb-4">To be filed by:</p>
+                <p className="text-sm text-white mb-4">To be filed by:</p>
                 <ul className="space-y-2">
                   {date.categories.map((category, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-white">
+                    <li key={idx} className="flex items-start text-sm">
                       <span className="mr-2">•</span>
                       <span>{category}</span>
                     </li>
@@ -69,4 +69,3 @@ export function DueDates() {
     </section>
   )
 }
-

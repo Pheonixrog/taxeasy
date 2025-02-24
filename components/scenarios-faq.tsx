@@ -23,21 +23,21 @@ export function ScenariosFAQ() {
   ]
 
   return (
-    <section className="py-16 px-8 bg-gradient-to-r from-purple-50 to-pink-50">
-      <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-2">
+    <section className="py-16 px-6 sm:px-8 bg-gradient-to-r from-purple-50 to-pink-50">
+      <div className="container mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">
           Do you also have any of the following Scenario's?
         </h2>
         <p className="text-center text-gray-600 mb-8">
-          We have got you covered ! Call Now !
+          We have got you covered! Call Now!
         </p>
         <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
           {scenarios.map((scenario, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-left">
+              <AccordionTrigger className="text-left text-sm sm:text-base">
                 {scenario}
               </AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="text-gray-600 text-sm sm:text-base">
                 Contact our experts to get personalized assistance with this scenario.
               </AccordionContent>
             </AccordionItem>
@@ -47,4 +47,3 @@ export function ScenariosFAQ() {
     </section>
   )
 }
-

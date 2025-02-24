@@ -14,6 +14,7 @@ import { WhyTaxEasy } from "@/components/why-taxeasy"
 export default function Home() {
   return (
     <div className="min-h-screen ">
+      
       <Hero />
       <Partners />
       <ProcessSteps/>

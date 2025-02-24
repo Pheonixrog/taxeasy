@@ -5,21 +5,22 @@ export function Partners() {
     { name: "ICICI Bank", logo: "https://imgs.search.brave.com/ZeY51wd5KFSLJYdfZOenCCNGLPW3rZhh1ZJFwd_89-U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ha20t/aW1nLWEtaW4udG9z/c2h1Yi5jb20vYnVz/aW5lc3N0b2RheS9j/b21wYW55LWltZy9p/Y2ljaWJhbmtfOTM3/ODY0NTc2MThfNTQx/OC5wbmc" },
     { name: "GoDaddy", logo: "https://imgs.search.brave.com/yT82wOOAuJXUMIpr_beptGORZIBveVeECYWUZmqFgSg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9Hb0RhZGR5/L0dvRGFkZHktTG9n/by1Mb2dvLndpbmUu/c3Zn" },
     { name: "Pantasign", logo: "https://imgs.search.brave.com/OTq__n-gRrpihsBW7hfiBPDTeBsyA8-HBbgHxBUEvBo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MjFLM01vR3JJdkwu/anBn" }
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">We Associated With</h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-items-center">
           {partners.map((partner) => (
-            <div key={partner.name} className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div 
+              key={partner.name} 
+              className="p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow transform hover:scale-105 duration-300 flex items-center justify-center">
               <img src={partner.logo} alt={partner.name} className="h-12 w-auto" />
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-

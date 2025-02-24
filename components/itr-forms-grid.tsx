@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const itrForms = [
   {
@@ -70,33 +65,27 @@ const itrForms = [
     id: "itr6 and itr7",
     title: "ITR-6 Return Filing, ITR-7 Return Filing",
     items: [
-      "Companies not claiming Exemption under section 11","Person/ Companies under Section 139 (4A)/ Section 139 (4B)/ Section 139 (4C)/ Section 139 (4D)"
+      "Companies not claiming Exemption under section 11",
+      "Person/ Companies under Section 139 (4A)/ Section 139 (4B)/ Section 139 (4C)/ Section 139 (4D)"
     ]
-  },
-  // {
-  //   id: "itr7",
-  //   title: "ITR-7 Return Filing",
-  //   items: [
-  //     "Person/ Companies under Section 139 (4A)/ Section 139 (4B)/ Section 139 (4C)/ Section 139 (4D)"
-  //   ]
-  // }
-]
+  }
+];
 
 export function ITRFormsGrid() {
   return (
-    <section className="py-16 px-8 bg-gradient-to-r from-gray-50 to-gray-100">
-      <div className="container">
+    <section className="py-16 px-4 sm:px-8 bg-gradient-to-r from-gray-50 to-gray-100">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2">Types of ITR Forms?</h2>
-          <p className="text-gray-600">
-            We will guide you as which ITR Form is applicable to you as per your details
+          <p className="text-gray-600 max-w-xl mx-auto">
+            We will guide you as to which ITR Form is applicable to you as per your details.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {itrForms.map((form) => (
             <Card key={form.id} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">{form.title}</CardTitle>
+                <CardTitle className="text-lg font-semibold">{form.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-500 mb-4">To be filed by:</p>
@@ -114,6 +103,5 @@ export function ITRFormsGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

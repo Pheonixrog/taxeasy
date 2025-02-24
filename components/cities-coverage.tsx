@@ -7,17 +7,18 @@ export function CitiesCoverage() {
   ]
 
   return (
-    <section className="py-16 px-8 bg-white">
-      <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">ITR Filing in Cities</h2>
-        <div className="grid md:grid-cols-4 gap-8">
-          {cities.map((column, i) => (
-            <div key={i} className="space-y-2">
-              {column.map((city) => (
-                <div key={city} className="hover:text-primary cursor-pointer">
-                  ITR Filing in {city}
-                </div>
-              ))}
+    <section className="py-16 px-4 sm:px-8 bg-gray-50">
+      <div className="container mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-800">
+          ITR Filing in Cities
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 text-center">
+          {cities.flat().map((city) => (
+            <div
+              key={city}
+              className="p-3 sm:p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition cursor-pointer hover:text-primary"
+            >
+              ITR Filing in {city}
             </div>
           ))}
         </div>
@@ -25,4 +26,3 @@ export function CitiesCoverage() {
     </section>
   )
 }
-

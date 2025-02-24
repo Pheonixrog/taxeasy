@@ -54,12 +54,14 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-gray-900 px-8 text-white">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 px-6 sm:px-10 lg:px-16 text-white">
+      <div className="container mx-auto py-12">
+        
+        {/* Service Links Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6">
           {Object.entries(services).map(([category, items]) => (
             <div key={category}>
-              <h3 className="font-bold mb-4">{category}</h3>
+              <h3 className="font-semibold text-lg mb-4">{category}</h3>
               <ul className="space-y-2">
                 {items.map((item) => (
                   <li key={item}>
@@ -73,45 +75,35 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-wrap justify-between items-center">
-            <div className="space-y-4">
-              <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  <Youtube size={20} />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  <Facebook size={20} />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  <Instagram size={20} />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  <Twitter size={20} />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  <Linkedin size={20} />
-                </Link>
-              </div>
-              <p className="text-sm text-gray-400">
-                © 2017-2024 TaxEasy Solutions Pvt. Ltd. All Rights Reserved
-              </p>
-            </div>
-            {/* <div className="flex space-x-4 mt-4 lg:mt-0">
-              <Link href="#" className="text-sm text-gray-400 hover:text-white">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-sm text-gray-400 hover:text-white">
-                Refund Policy
-              </Link>
-              <Link href="#" className="text-sm text-gray-400 hover:text-white">
-                Disclaimer
-              </Link>
-            </div> */}
-          </div> 
+        {/* Footer Bottom Section */}
+        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center md:justify-between text-center md:text-left gap-y-4">
+          
+          {/* Social Media Icons */}
+          <div className="flex space-x-4">
+            <Link href="#" className="text-gray-400 hover:text-white">
+              <Youtube size={20} />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              <Facebook size={20} />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              <Instagram size={20} />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              <Twitter size={20} />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              <Linkedin size={20} />
+            </Link>
+          </div>
+
+          {/* Copyright Text */}
+          <p className="text-sm text-gray-400">
+            © 2017-2024 TaxEasy Solutions Pvt. Ltd. All Rights Reserved
+          </p>
+
         </div>
       </div>
     </footer>
   )
 }
-
