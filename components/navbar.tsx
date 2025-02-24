@@ -24,7 +24,7 @@ export function Navbar() {
         {/* Desktop Navbar Links */}
         <div className="hidden md:flex items-center space-x-6">
           <Link href="/" className="text-sm font-medium hover:text-primary">HOME</Link>
-          <Link href="/company" className="text-sm font-medium hover:text-primary">COMPANY/LLP</Link>
+          <Link href="/services" className="text-sm font-medium hover:text-primary">COMPANY/LLP</Link>
           <Link href="/itr" className="text-sm font-medium hover:text-primary">ITR FILING</Link>
           <Link href="/gst" className="text-sm font-medium hover:text-primary">GST</Link>
           <Link href="/about" className="text-sm font-medium hover:text-primary">ABOUT US</Link>
